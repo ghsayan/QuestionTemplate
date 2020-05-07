@@ -1,0 +1,276 @@
+/* body styles */
+
+body {
+    padding-bottom: 100px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*main-section*/
+.topbar {
+    display: grid;
+    grid-template-columns: 2fr 7fr 1fr;
+    background: white;
+}
+
+#section-header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+.navimg {
+    height: 50px;
+    width: auto;
+    padding: 1px;
+    margin-left: 10px;
+}
+
+#intro .bg-image {
+    position: absolute;
+    opacity: 0.8;
+    background: #333 url('bookimg.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+}
+
+#intro h1 {
+    color: black;
+    padding: 50px 0;
+    font-size: 70px;
+    line-height: 0;
+    text-shadow: 1px 2px white;
+    font-weight: 800;
+}
+
+#intro h2 {
+    color: rgb(42, 85, 226);
+    margin: 0;
+    padding: 40px 0;
+    font-size: 50px;
+    line-height: 0;
+    font-weight: 600;
+    text-shadow: 1px 1px rgb(61, 243, 198);
+}
+
+#intro h5 {
+    color: black;
+    padding: 25px 0;
+    font-size: 30px;
+    font-family: monospace;
+    line-height: 0;
+    font-weight: 200;
+}
+
+#intro .btn-primary {
+    color: white;
+    border: 1px solid;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 1px 2px rgb(65, 63, 63);
+}
+
+#intro .btn-primary:hover {
+    background-color: rgb(0, 123, 255, 0);
+}
+
+.title {
+    font-size: 30px;
+    margin: 50px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(68, 67, 67);
+}
+
+#departments {
+    margin: 30px;
+    font-size: 20px;
+    height: auto;
+    line-height: 2em;
+}
+
+#departments .btn-primary {
+    color: white;
+    background-color: rgb(71, 70, 70);
+    border: 1px solid;
+    display: inline-block;
+}
+
+#departments .btn-primary:hover {
+    background-color: white;
+    color: rgb(71, 70, 70);
+    border: 1px solid;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(71, 70, 70);
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+}
+
+.footer a {
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(68, 105, 224);
+}
+
+/*Semester*/
+
+#semester {
+    line-height: 2em;
+    margin: 60px 0px;
+}
+
+#semester .btn-default,
+#semester .btn-default1 {
+    color: rgb(71, 70, 70);
+    background-color: white;
+    border: 1px solid;
+    opacity: 0.7;
+    display: none;
+}
+
+#semester .btn-default:hover,
+#semester .btn-default1:hover {
+    opacity: 1;
+}
+
+#semester .btn-default:active,
+#semester .btn-default1:active {
+    color: white;
+    background-color: black;
+    border: 1px solid;
+    opacity: 0.7;
+    display: none;
+}
+
+/*Papers*/
+
+.paperh {
+    color: black;
+    margin-bottom: 40px;
+    padding: 25px;
+    font-size: 30px;
+    font-family: monospace;
+    line-height: 0;
+    font-weight: 200;
+    display: none;
+}
+
+.box {
+    font-size: 16px;
+    line-height: 10px;
+    display: none;
+    margin: 5px;
+}
+
+.subject {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+    height: 50px;
+}
+
+.elements {
+    border-color: rgb(189, 189, 189);
+    border-style: solid;
+    border-radius: 0px 0px 5px 5px;
+    border-width: 0px 0.5px 0.5px 0.5px;
+    padding: 20px;
+    text-align: left;
+}
+
+@media(min-width: 800px) {
+    .papers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+}
+
+
+/*DETAILS.HTML*/
+
+.study {
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    background-color: white;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    color: rgb(99, 99, 99);
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(99, 99, 99);
+    content: "/\00a0";
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto 20px auto;
+    min-width: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+th,
+td {
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.syllabus,
+.question,
+.video {
+    display: none;
+}
